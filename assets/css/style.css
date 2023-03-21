@@ -202,3 +202,32 @@ footer {
 #photos > img {
     width: 100%;
 }
+/* Media Queries */
+/* For large to medium screen size from 1200 px wide down */
+
+@media screen and (max-width:1200px) {
+
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0;
+    }
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
+    #left-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+    hr {
+        display: none;
+    }
+}
