@@ -6,13 +6,13 @@
     border: none;
 }
 body {
-    font-family: lato, sans-serif;
+    font-family: Lato, sans-serif;
     font-weight: 300;
     color: #3a3a3a;
 }
-/* heading and logo */
+/* headings and logo */
 h1, h2 {
-    font-family: oswald, sans-serif;
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #252525;
@@ -22,6 +22,9 @@ h1, h2 {
     font-size: 280%;
     margin-left: 30px;
 }
+
+/* navigation links */
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -37,7 +40,7 @@ h1, h2 {
 }
 #menu a {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
 }
 #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
@@ -53,12 +56,12 @@ h1, h2 {
     position: relative;
 }
 #cover-text, #cover-text h2 {
-    color:#fff;
+    color: #fff;
 }
 #hero-image {
     height: 600px;
     width: 100%;
-    background: url(../images/hero-image.webp) no-repeat center center;
+    background: url('../images/hero-image.webp') no-repeat center center;
 
 /* animates zoom effect on loading page */
     animation-name: hero-zoom;
@@ -76,7 +79,7 @@ h1, h2 {
 }
 #cover-text {
     font-size: 130%;
-    font-family: oswald, sans-serif;
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     width: 300px;
@@ -102,7 +105,7 @@ h1, h2 {
 #right-about {
     padding-top: 30px;
     width: 33%;
-    float:right;
+    float: right;
 }
 #center-about {
     width: 33%;
@@ -110,7 +113,7 @@ h1, h2 {
 }
 .left-about-heading {
     width: 60%;
-    float:right;
+    float: right;
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
@@ -118,7 +121,7 @@ h1, h2 {
 hr {
     border-top: 1px solid #3a3a3a;
     width: 100%;
-    margin:5px 0;
+    margin: 5px 0;
 }
 .right-about-heading {
     width: 60%;
@@ -135,7 +138,7 @@ hr {
 }
 #welcome {
     text-align: center;
-    margin: 20px;
+    margin: 20px 0;
     font-size: 280%;
 }
 #circle-container {
@@ -163,7 +166,7 @@ hr {
 }
 #times div {
     color: #fafafa;
-    background-color:rgba(0, 0, 0, .6) ;
+    background-color: rgba(0, 0, 0, .6) ;
     width: 20%;
     height: 300px;
     float: left;
@@ -210,13 +213,13 @@ footer {
     #club-ethos {
         width: 65%;
         height: 1200px;
-        margin: 0;
+        margin: 0 auto;
     }
     #welcome {
         padding: 30px 0;
         margin: 0;
     }
-    #left-about {
+    #left-about, #right-about {
         width: 100%;
         float: left;
         padding: 0;
@@ -225,6 +228,12 @@ footer {
         clear: both;
         width: 100%;
         float: left;
+        padding: 0;
+    }
+    #times > div {
+        width: 100%;
+        clear: both;
+        height: 150px;
         padding: 0;
     }
     hr {
@@ -240,5 +249,24 @@ footer {
         margin-left: 30px;
         margin-bottom: 20px;
         line-height: 25px;
+    }
+    #cover-text {
+        left: 0;
+    }
+    #club-ethos {
+        width: 90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+    .left-about-heading , .right-about-heading {
+        width: inherit;
+    }
+    .left-about-heading h2 , .right-about-heading h2 {
+        width: 100%;
+        text-align: center;
+    }
+    .left-about-heading p, .right-about-heading p {
+        text-align: center;
+        padding: 0 20px;
     }
 }
